@@ -58,6 +58,9 @@
 }
 
 html {
+   display: flex;
+   max-width: 100dvw;
+   min-height: 100dvh;
    line-height: 1.15;
    -webkit-text-size-adjust: 100%;
    background: #1b1d22;
@@ -76,6 +79,12 @@ html {
       )
    ;
    background-size: 25px 25px;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
 }
 
 /* == [ defaults ] 
@@ -315,7 +324,9 @@ placeholder {
 }
 
 appbar {
-   
+   position: sticky;
+   top: 0;
+   left: 0;
 }
 
 homepage, home-page {
@@ -397,3 +408,24 @@ placeholder img {
 [pinklyh]{ color: #fc0fc0; }
 [roselyh]{ color: #905;    }
 [amber]  { color: #fc0;    }
+
+
+
+/* == [ mídias ]
+== == == == == == == == == */
+pix {
+   display: flex;
+} pix > img {
+   height: clamp( 100px, 55dvw, 550px );
+   margin: auto;
+}
+vid {
+   display: flex;
+   width: clamp( 100px, 100%, 550px );
+   aspect-ratio: 16 / 9;
+   margin: auto;
+} vid > * {
+   width: 100%;
+   height: 100%;
+   border: transparent;
+}
