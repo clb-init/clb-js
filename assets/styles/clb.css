@@ -20,10 +20,6 @@
    box-sizing:border-box;
 }
 
-[hidden] {
-   display: none;
-}
-
 :root {
    font: 1em "inter";
    font-weight: 400;
@@ -32,11 +28,11 @@
    
    color-scheme: light dark;
    /* vite */
-   background-color: #242424; 
+   /* background-color: #242424;  */
    /* dark reader */
-   background: #1e2021;       
+   /* background: #1e2021;        */
    /* céo */
-   background-color: #212329;  
+   /* background-color: #212329;   */
 
    --main-c: #f5f5f5;
    --appbar-shadow: rgba( 0 0 0 .25 ) 0 4px 8px;
@@ -47,6 +43,39 @@
    -moz-osx-font-smoothing: grayscale;
 
 
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+::-webkit-scrollbar-track {
+   background: var( --pink );
+   border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+   background: var( --dark0 );
+   border-radius: 5px;
+}
+
+html {
+   line-height: 1.15;
+   -webkit-text-size-adjust: 100%;
+   background: #1b1d22;
+
+   background-color: #1b1d22;
+   background-image: 
+      linear-gradient(
+         0deg, 
+         #00000000 24px, 
+         #313339 25px
+      ),
+      linear-gradient(
+         90deg, 
+         #00000000 24px, 
+         #313339 25px
+      )
+   ;
+   background-size: 25px 25px;
 }
 
 /* == [ defaults ] 
@@ -344,6 +373,8 @@ placeholder img {
 
 /* == [ clb properties ]
 == == == == == == == == == */
+[hidden] { display: none; }
+
 [center] {
    margin: auto;
 }
@@ -363,5 +394,6 @@ placeholder img {
 == == == == == == == == == */
 [red]    { color: crimson; }
 [blue]   { color: #29f;    }
-[pink]   { color: #fc0fc0; }
+[pinklyh]{ color: #fc0fc0; }
+[roselyh]{ color: #905;    }
 [amber]  { color: #fc0;    }
