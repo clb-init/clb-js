@@ -47,5 +47,11 @@ window.addEventListener( "load", ev => {
    $$( "[pd]" ).forEach( p => {
       p.style.padding = p.getAttribute( "pd" );
    } );
+   
+   /* == [ gap ] 
+   == == == == == == == == == */
+   $$( "[gap]" ).forEach( g => {
+      g.style.gap = g.getAttribute( "gap" );
+   } );
 
 } );
