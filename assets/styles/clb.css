@@ -319,6 +319,7 @@ box, [box],
 placeholder {
    display: flex;
    flex-direction: column;
+   width: 100%;
    margin: 0;
    padding: 0;
 }
@@ -343,6 +344,11 @@ section, [section] {
 
 content, [content] {
    padding: 1rem;
+}
+[content="mobile"], [mobile] {
+   width: clamp( 100px, 95%, 696px );
+   margin: 0 auto;
+   padding: 3rem !important;
 }
 
 child, [child] {
@@ -391,7 +397,7 @@ placeholder img {
    margin: auto;
 }
 
-[gap] { gap: 2em; }
+/* [gap] { gap: 2em; } */
 
 [pd="2em"] { padding: 2em; }
 [np] { padding: 0 !important; }
