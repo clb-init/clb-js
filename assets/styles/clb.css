@@ -376,10 +376,8 @@ box, [box] {
 block, [block] { display: block; }
 flex, [flex] {
    display: flex;
+   flex-direction: column;
    width: 100%;
-   align-items: center;
-   /* justify-content: space-around; */
-   align-items: stretch;
 }
 
 placeholder img {
