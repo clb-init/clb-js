@@ -423,6 +423,7 @@ pix {
    margin: auto;
 } pix > img[vertical] {
    height: clamp( 100px, 55dvw, 550px );
+   width: auto;
    margin: auto;
 }
 vid {
